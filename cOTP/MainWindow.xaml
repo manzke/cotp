@@ -1,0 +1,9 @@
+﻿<Window x:Class="Devsurf.Security.Otp.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="cOTP" Name="cOTP" AllowsTransparency="False" UseLayoutRounding="False" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" Loaded="cOTP_Loaded" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="61" Width="141" ResizeMode="NoResize">
+    <Grid>
+        <TextBox Name="otpBox" IsReadOnly="True" Text="{Binding Now, Mode=OneWay}" TextAlignment="Center" />
+        <Button Content="Button" Height="0" HorizontalAlignment="Left" Margin="59,12,0,0" Name="exitButton" VerticalAlignment="Top" Width="0" IsCancel="True" Visibility="Visible" Click="button1_Click" />
+    </Grid>
+</Window>
